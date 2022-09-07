@@ -14,7 +14,10 @@ const Home: NextPage = (props:any) => {
       </Head>
       {
         props.products.map((item:any) =>{
-          <h5>{item.title}</h5>
+          console.log("item => " ,item)
+          return (
+            <h5>{item.title}</h5>
+          )
         })
       }
     </div>
