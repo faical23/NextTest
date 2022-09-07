@@ -8,9 +8,9 @@ const Home: NextPage = (props:any) => {
 
   const ProductData =  props.products.map((item:any,index:any) =>{
                           console.log("item", index , " ==> " ,item.title)
-                          return (
-                            <h5>{item.title}</h5>
-                          )
+                          // return (
+                          //   <h5>{item.title}</h5>
+                          // )
                       })
   return (
     <div className={styles.container}>
