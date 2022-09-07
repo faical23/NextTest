@@ -6,12 +6,12 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = (props:any) => {
   console.log("props ==>",props.products)
 
-  const ProductData =  props.products.map((item:any,index:any) =>{
-                          console.log("item", index , " ==> " ,item.title)
-                          // return (
-                          //   <h5>{item.title}</h5>
-                          // )
-                      })
+  // const ProductData =  props.products.map((item:any,index:any) =>{
+  //                         console.log("item", index , " ==> " ,item.title)
+  //                         // return (
+  //                         //   <h5>{item.title}</h5>
+  //                         // )
+  //                     })
   return (
     <div className={styles.container}>
       <Head>
@@ -20,7 +20,7 @@ const Home: NextPage = (props:any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>AAA</h1>
-      {ProductData}
+      {/* {ProductData} */}
 
     </div>
   )
