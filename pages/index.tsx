@@ -17,15 +17,15 @@ const Home: NextPage = (props:any) => {
   )
 }
 
-// export async function getStaticProps() {
-//   const Items = await fetch('https://nginx/api/items');
-//   const ResItems = await Items.json()
-//   return {
-//     props: {
-//       data:['ResItems'],
-//     },
-//   }
-// }
+export async function getStaticProps() {
+  // const Items = await fetch('https://nginx/api/items');
+  // const ResItems = await Items.json()
+  return {
+    props: {
+      data:['ResItems'],
+    },
+  }
+}
 
 
 export default Home
