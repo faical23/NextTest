@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = (props:any) => {
-  console.log("props ==>",props.products)
+  console.log("props ==>",props.data.products)
   return (
     <div className={styles.container}>
       <Head>
@@ -25,9 +25,7 @@ export async function getStaticProps() {
   const Items = await fetch('https://dummyjson.com/products');
   const ResItems = await Items.json()
   return {
-    props: {
-      data:ResItems,
-    },
+    props:ResItems
   }
 }
 
